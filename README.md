@@ -149,6 +149,52 @@ The project considers standard regression metrics including:
 
 Model comparison is performed in SAS Model Studio to identify the most appropriate predictive model.
 
+## Project Evidence
+
+The following screenshots document the end-to-end SAS Viya modeling workflow used in this project.
+
+### SAS Model Studio Pipeline
+
+![SAS Model Studio Pipeline](screenshots/05_model_studio_pipeline.png)
+
+The pipeline connects the prepared dataset to multiple predictive models, followed by scoring and model comparison.
+
+### Model Comparison
+
+![Model Comparison](screenshots/03_model_comparison.png)
+
+Forest, Gradient Boosting, and Linear Regression were evaluated using the same modeling workflow. The Forest model was selected as the champion based on the displayed test-set performance.
+
+### Forest Error Plot
+
+![Forest Error Plot](screenshots/02_forest_error_plot.png)
+
+The error plot shows how the average squared error changes as the number of trees increases. The validation partition reaches its minimum error at 87 trees in the displayed model configuration.
+
+### Predicted vs Actual RUL
+
+![Predicted vs Actual](screenshots/06_predicted_by_actual.png)
+
+The predicted-versus-actual plot provides a visual assessment of how closely the model predictions follow the observed RUL target across the data partitions.
+
+### Prediction by Depth
+
+![Prediction by Depth](screenshots/07_predicted_by_depth.png)
+
+This visualization compares predicted and actual target means across model depth, providing additional insight into prediction behavior.
+
+### Model Input Configuration
+
+![Model Input Configuration](screenshots/01_data_table.png)
+
+The SAS Model Studio data view shows the variable roles used for modeling, including `RUL` as the target, `Engine_ID` as the identifier, and the engineered moving-average variables.
+
+### Forest Procedure Output
+
+![Forest Procedure Output](screenshots/04_forest_procedure_output.png)
+
+The Forest procedure output documents the configuration of the final Forest model, including the number of trees, input variables per split, bootstrap percentage, and tree-depth parameters.
+
 ## Model Interpretability
 
 The Forest model identified several influential variables.

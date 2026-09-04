@@ -3,6 +3,23 @@
 
 An end-to-end predictive maintenance project using the NASA C-MAPSS turbofan engine degradation dataset, SAS Viya, and SAS Model Studio to predict Remaining Useful Life (RUL) of aircraft engines.
 
+## Table of Contents
+
+- [Project Overview](#project-overview)
+- [Objectives](#objectives)
+- [Technology Stack](#technology-stack)
+- [Dataset](#dataset)
+- [Project Workflow](#project-workflow)
+- [Feature Engineering](#feature-engineering)
+- [Models](#models)
+- [Model Evaluation](#model-evaluation)
+- [Project Evidence](#project-evidence)
+- [Repository Structure](#repository-structure)
+- [How to Reproduce the Project](#how-to-reproduce-the-project)
+- [Key Learning Outcomes](#key-learning-outcomes)
+- [Limitations](#limitations)
+- [Future Improvements](#future-improvements)
+
 ## Project Overview
 
 Predictive maintenance uses historical sensor and operational data to identify equipment degradation and estimate when maintenance may be required.
